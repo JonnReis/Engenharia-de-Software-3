@@ -4,22 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Face recognition</title>
-<!--  <link id="favicon" rel="icon" type="image/x-icon" href="assets/favicon.ico">-->
+  <title>Reconhecimento facial</title>
+  <link href="css/bootstrap.min.css" rel=stylesheet>
   <script defer src="js/face-api.min.js"></script>
   <script defer src="js/video-script.js"></script>
   <style>
     canvas {
       position: absolute;
-      left: 0;
+      left: 50vh;
     }
   </style>
 </head>
 <body>
-<div style="align-items: center; justify-content: center; display: flex;">
-  <span style="font-size: 130px; text-align: center; color: #eebc41">Reconhecimento Facial</span>
-</div>
-<div style="position: relative">
+<div style="position: relative;">
   <video id="video" width="720" height="560" autoplay muted></video>
   <canvas id="canvas" width="720" height="560"></canvas>
 </div>
