@@ -9,16 +9,36 @@
   <script defer src="js/face-api.min.js"></script>
   <script defer src="js/video-script.js"></script>
   <style>
+    .video-capture {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
     canvas {
       position: absolute;
-      left: 50vh;
     }
   </style>
 </head>
 <body>
-<div style="position: relative;">
+<nav class="navbar navbar-default">
+  <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div class="navbar-header">
+      <h4 class="navbar-brand">Reconhecimento facial</h4>
+    </div>
+    <div style="padding-right: 15px;">
+      <button type="button" class="btn btn-success">Capturar foto</button>
+    </div>
+  </div>
+</nav>
+<div class="video-capture" style="position: relative;">
   <video id="video" width="720" height="560" autoplay muted></video>
   <canvas id="canvas" width="720" height="560"></canvas>
+<!--  <button>Take a snapshot</button>-->
 </div>
 </body>
 </html>
