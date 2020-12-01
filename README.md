@@ -20,3 +20,11 @@ O reconhecimento facial é feito a partir de uma API em Javascript para detecç�
 
 #### Reconhecimento de uma pessoa cadastrada
 ![](https://i.imgur.com/Ps4b6in.jpg)
+
+## Configuração
+Deve possuir o Gradle 6.x.x
+```
+git clone https://github.com/JonnReis/Engenharia-de-Software-3.git
+cd Engenharia-de-Software-3
+gradle run
+```
